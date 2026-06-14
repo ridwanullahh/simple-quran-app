@@ -1,0 +1,12 @@
+{
+  "name": "simple-quran-app",
+  "version": "1.0.0",
+  "description": "Simple Digital Mushaf - Quran Reading App - Bismillah",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["quran", "islam", "mushaf", "digital-quran"],
+  "author": "Ridwanullah",
+  "license": "MIT"
+}

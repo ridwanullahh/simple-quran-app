@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القرآن الكريم - Digital Mushaf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>بسم الله الرحمن الرحيم</h1>
+            <h2>القرآن الكريم</h2>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab active" data-view="surah">السور</button>
+            <button class="tab" data-view="juz">الأجزاء</button>
+            <button class="tab" data-view="read">القراءة</button>
+        </nav>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="ابحث في القرآن...">
+        </div>
+
+        <div id="surahView" class="view active">
+            <div id="surahList" class="list-container">
+                <div class="loading">جاري التحميل...</div>
+            </div>
+        </div>
+
+        <div id="juzView" class="view">
+            <div id="juzList" class="list-container">
+                <div class="juz-grid"></div>
+            </div>
+        </div>
+
+        <div id="readView" class="view">
+            <div class="reader-controls">
+                <button id="prevPage">السابق</button>
+                <span id="pageInfo">صفحة 1</span>
+                <button id="nextPage">التالي</button>
+            </div>
+            <div id="ayahContainer" class="ayah-container"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
